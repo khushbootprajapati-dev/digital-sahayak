@@ -896,81 +896,66 @@ button:disabled {
 }
 
 
-/* Accessible multilingual text-to-speech controls */
-.tts-toolbar {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px 16px;
-    padding: 12px 5%;
+/* Single lesson speaker controls inside the service guide dialog */
+.lesson-speech-panel {
+    margin-top: 22px;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
     background: #eef6f8;
-    border-bottom: 1px solid #d7e5eb;
 }
-.tts-toolbar-title {
-    color: var(--navy);
-    font-size: .95rem;
-}
-.tts-toolbar-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-.tts-control-btn,
-.tts-button {
+.lesson-listen-btn,
+.lesson-speech-btn {
     min-height: 44px;
     padding: 10px 16px;
     border: 2px solid var(--primary);
     border-radius: 12px;
-    background: white;
-    color: var(--navy);
     font: inherit;
     font-weight: 700;
     cursor: pointer;
 }
-.tts-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.lesson-listen-btn {
+    width: 100%;
+    background: var(--primary);
+    color: #fff;
+}
+.lesson-speech-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+.lesson-speech-btn {
+    flex: 1 1 100px;
+    background: #fff;
+    color: var(--navy);
+}
+.lesson-listen-btn:hover,
+.lesson-speech-btn:hover {
+    filter: brightness(.96);
+}
+.lesson-listen-btn:disabled,
+.lesson-speech-btn:disabled {
+    cursor: not-allowed;
+    opacity: .55;
+}
+.lesson-speech-status {
     margin: 10px 0 0;
-    background: #e8f7f8;
-}
-.tts-control-btn:hover,
-.tts-button:hover {
-    background: #d9f0f2;
-}
-.tts-control-btn:focus-visible,
-.tts-button:focus-visible {
-    outline: 3px solid #e8a126;
-    outline-offset: 3px;
-}
-.tts-status {
-    flex: 1 1 100%;
-    margin: 0;
     color: var(--muted);
     font-size: .92rem;
 }
-.service-card .tts-button {
-    width: 100%;
-}
-#guideContent .tts-button {
-    margin-bottom: 12px;
-}
 @media (max-width: 600px) {
-    .tts-toolbar {
-        align-items: stretch;
-        flex-direction: column;
-        padding: 12px 5%;
+    .lesson-speech-panel {
+        padding: 14px;
     }
-    .tts-toolbar-buttons {
+    .lesson-speech-actions {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .tts-control-btn {
-        width: 100%;
+    .lesson-speech-btn {
         padding: 10px 8px;
     }
 }
-
 
 /* Digital Saathi bilingual brand taglines */
 .brand-name {
