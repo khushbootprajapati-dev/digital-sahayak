@@ -19,7 +19,7 @@ const translations = {
     feedbackEyebrow:"YOUR VOICE MATTERS",feedbackTitle:"Help us improve",feedbackText:"Share your experience using this educational website.",ratingLabel:"Was this website helpful?",selectRating:"Choose a rating",rating5:"5 - Very helpful",rating4:"4 - Helpful",rating3:"3 - Okay",rating2:"2 - Not very helpful",rating1:"1 - Not helpful",suggestionLabel:"Suggestions (optional)",suggestionPlaceholder:"Share your suggestions...",submitFeedback:"Save feedback on this device",feedbackLocalNote:"This demo saves feedback only in this browser. It does not send it to the project owner.",feedbackSaved:"Thank you! Feedback is saved on this device only.",feedbackFailed:"Feedback could not be saved in this browser. No data was sent.",
     disclaimerTitle:"Educational project notice",disclaimerText:"Digital Saathi is an independent educational project, not a government website. Services, requirements and fees can change. Always verify details on the relevant official portal. Never enter sensitive personal information on this demo website.",footerFeedback:"Give Feedback",closeGuide:"Close guide",guideIntro:"Follow these beginner-friendly steps. Confirm current instructions on the official portal.",guideNote:"Important: Never share your OTP, PIN or password with anyone. Official procedures may change.",
     searchFound:"service(s) found",
-    listen:"🔊 Listen",play:"▶ Play",pause:"⏸ Pause",resume:"▶ Resume",stop:"⏹ Stop",speechUnsupported:"Text-to-speech is not supported in this browser. Try an updated Chrome, Edge, or Safari browser.",voiceFallback:"The exact {lang} voice is unavailable on this device. Using the closest available voice; pronunciation may vary.",speechReady:"Choose Listen on a section, or use Play to read the main page.",nothingToRead:"There is no visible text to read in this section.",ttsToolbar:"Read aloud controls",speechStopped:"Speech stopped.",speechPaused:"Speech paused.",speechResumed:"Speech resumed.",playPage:"▶ Read page",sectionListen:"Listen to this section",cardListen:"Listen to this service",guideListen:"Listen to this guide",quizListen:"Listen to this quiz",speechError:"Speech could not start. Check your device's speech/voice settings."
+    lessonListen:"🔊 Listen to lesson",closeLesson:"Close ✕",listen:"🔊 Listen",play:"▶ Play",pause:"⏸ Pause",resume:"▶ Resume",stop:"⏹ Stop",speechUnsupported:"Text-to-speech is not supported in this browser. Try an updated Chrome, Edge, or Safari browser.",voiceFallback:"The exact {lang} voice is unavailable on this device. Using the closest available voice; pronunciation may vary.",speechReady:"Choose Listen on a section, or use Play to read the main page.",nothingToRead:"There is no visible text to read in this section.",ttsToolbar:"Read aloud controls",speechStopped:"Speech stopped.",speechPaused:"Speech paused.",speechResumed:"Speech resumed.",playPage:"▶ Read page",sectionListen:"Listen to this section",cardListen:"Listen to this service",guideListen:"Listen to this guide",quizListen:"Listen to this quiz",speechError:"Speech could not start. Check your device's speech/voice settings."
 
   },
   hi: {
@@ -36,7 +36,7 @@ const translations = {
     quizEyebrow:"अपनी जानकारी जाँचें",quizTitle:"डिजिटल सुरक्षा प्रश्नोत्तरी",previous:"← पिछला",next:"अगला प्रश्न →",seeResult:"परिणाम देखें",restart:"प्रश्नोत्तरी फिर शुरू करें",question:"प्रश्न {n} / {total}",score:"अंक: {score}",completed:"प्रश्नोत्तरी पूरी हुई",yourScore:"आपके अंक: {score} / {total}",excellent:"बहुत बढ़िया! आपने सभी प्रश्नों के सही उत्तर दिए।",good:"अच्छा प्रयास! समझाइयाँ पढ़ें और अंक सुधारने के लिए फिर कोशिश करें।",correct:"सही! ",incorrect:"यह सही नहीं है। ",answerFirst:"आगे बढ़ने के लिए एक उत्तर चुनें।",resultExcellent:"डिजिटल सुरक्षा की आपकी जानकारी बहुत अच्छी है!",resultGood:"सीखते रहें—सुरक्षा की छोटी आदतें ऑनलाइन आपकी रक्षा करती हैं।",
     feedbackEyebrow:"आपकी राय ज़रूरी है",feedbackTitle:"वेबसाइट बेहतर बनाने में मदद करें",feedbackText:"इस शैक्षणिक वेबसाइट का अपना अनुभव बताएँ।",ratingLabel:"क्या यह वेबसाइट उपयोगी थी?",selectRating:"रेटिंग चुनें",rating5:"5 - बहुत उपयोगी",rating4:"4 - उपयोगी",rating3:"3 - ठीक है",rating2:"2 - ज़्यादा उपयोगी नहीं",rating1:"1 - उपयोगी नहीं",suggestionLabel:"सुझाव (वैकल्पिक)",suggestionPlaceholder:"अपने सुझाव लिखें...",submitFeedback:"इस डिवाइस पर फ़ीडबैक सेव करें",feedbackLocalNote:"यह डेमो फ़ीडबैक केवल इसी ब्राउज़र में सेव करता है। यह प्रोजेक्ट के मालिक को नहीं भेजा जाता।",feedbackSaved:"धन्यवाद! फ़ीडबैक केवल इसी डिवाइस पर सेव हुआ है।",feedbackFailed:"इस ब्राउज़र में फ़ीडबैक सेव नहीं हो सका। कोई डेटा नहीं भेजा गया।",
     disclaimerTitle:"शैक्षणिक परियोजना सूचना",disclaimerText:"Digital Saathi एक स्वतंत्र शैक्षणिक परियोजना है, सरकारी वेबसाइट नहीं। सेवाएँ, आवश्यकताएँ और शुल्क बदल सकते हैं। जानकारी संबंधित आधिकारिक पोर्टल पर जाँचें। इस डेमो वेबसाइट पर संवेदनशील व्यक्तिगत जानकारी न डालें।",footerFeedback:"फ़ीडबैक दें",closeGuide:"मार्गदर्शिका बंद करें",guideIntro:"इन सरल चरणों का पालन करें। वर्तमान निर्देश आधिकारिक पोर्टल पर जाँचें।",guideNote:"महत्वपूर्ण: अपना OTP, PIN या पासवर्ड किसी से साझा न करें। आधिकारिक प्रक्रिया बदल सकती है।",searchFound:"सेवाएँ मिलीं",
-    listen:"🔊 सुनें",play:"▶ चलाएँ",pause:"⏸ रोकें",resume:"▶ फिर चलाएँ",stop:"⏹ बंद करें",speechUnsupported:"इस ब्राउज़र में टेक्स्ट सुनाने की सुविधा उपलब्ध नहीं है। Chrome, Edge या Safari का नया संस्करण आज़माएँ।",voiceFallback:"इस डिवाइस पर {lang} की सही आवाज़ उपलब्ध नहीं है। सबसे मिलती-जुलती आवाज़ इस्तेमाल की जा रही है; उच्चारण अलग हो सकता है।",speechReady:"किसी भाग को सुनने के लिए 'सुनें' दबाएँ या पूरा पृष्ठ सुनने के लिए चलाएँ दबाएँ।",nothingToRead:"इस भाग में सुनाने के लिए कोई दिखाई देने वाला पाठ नहीं है।",ttsToolbar:"पाठ सुनने के नियंत्रण",speechStopped:"आवाज़ बंद कर दी गई है।",speechPaused:"आवाज़ रोक दी गई है।",speechResumed:"आवाज़ फिर शुरू हो गई है।",playPage:"▶ पृष्ठ सुनें",sectionListen:"यह भाग सुनें",cardListen:"यह सेवा सुनें",guideListen:"यह मार्गदर्शिका सुनें",quizListen:"यह प्रश्नोत्तरी सुनें",speechError:"आवाज़ शुरू नहीं हो सकी। अपने डिवाइस की आवाज़ सेटिंग जाँचें।"
+    lessonListen:"🔊 पाठ सुनें",closeLesson:"बंद करें ✕",listen:"🔊 सुनें",play:"▶ चलाएँ",pause:"⏸ रोकें",resume:"▶ फिर चलाएँ",stop:"⏹ बंद करें",speechUnsupported:"इस ब्राउज़र में टेक्स्ट सुनाने की सुविधा उपलब्ध नहीं है। Chrome, Edge या Safari का नया संस्करण आज़माएँ।",voiceFallback:"इस डिवाइस पर {lang} की सही आवाज़ उपलब्ध नहीं है। सबसे मिलती-जुलती आवाज़ इस्तेमाल की जा रही है; उच्चारण अलग हो सकता है।",speechReady:"किसी भाग को सुनने के लिए 'सुनें' दबाएँ या पूरा पृष्ठ सुनने के लिए चलाएँ दबाएँ।",nothingToRead:"इस भाग में सुनाने के लिए कोई दिखाई देने वाला पाठ नहीं है।",ttsToolbar:"पाठ सुनने के नियंत्रण",speechStopped:"आवाज़ बंद कर दी गई है।",speechPaused:"आवाज़ रोक दी गई है।",speechResumed:"आवाज़ फिर शुरू हो गई है।",playPage:"▶ पृष्ठ सुनें",sectionListen:"यह भाग सुनें",cardListen:"यह सेवा सुनें",guideListen:"यह मार्गदर्शिका सुनें",quizListen:"यह प्रश्नोत्तरी सुनें",speechError:"आवाज़ शुरू नहीं हो सकी। अपने डिवाइस की आवाज़ सेटिंग जाँचें।"
 
   },
   mr: {
@@ -53,7 +53,7 @@ const translations = {
     quizEyebrow:"तुमचे ज्ञान तपासा",quizTitle:"डिजिटल सुरक्षा प्रश्नमंजुषा",previous:"← मागील",next:"पुढील प्रश्न →",seeResult:"निकाल पाहा",restart:"प्रश्नमंजुषा पुन्हा सुरू करा",question:"प्रश्न {n} / {total}",score:"गुण: {score}",completed:"प्रश्नमंजुषा पूर्ण",yourScore:"तुमचे गुण: {score} / {total}",excellent:"उत्तम! तुम्ही सर्व प्रश्नांची बरोबर उत्तरे दिली.",good:"छान प्रयत्न! स्पष्टीकरणे वाचा आणि गुण सुधारण्यासाठी पुन्हा प्रयत्न करा.",correct:"बरोबर! ",incorrect:"हे बरोबर नाही. ",answerFirst:"पुढे जाण्यासाठी उत्तर निवडा.",resultExcellent:"डिजिटल सुरक्षिततेबद्दल तुमचे ज्ञान उत्तम आहे!",resultGood:"शिकत राहा—सुरक्षिततेच्या छोट्या सवयी ऑनलाइन संरक्षण करतात.",
     feedbackEyebrow:"तुमचे मत महत्त्वाचे आहे",feedbackTitle:"वेबसाइट सुधारण्यास मदत करा",feedbackText:"या शैक्षणिक वेबसाइटचा तुमचा अनुभव सांगा.",ratingLabel:"ही वेबसाइट उपयुक्त होती का?",selectRating:"रेटिंग निवडा",rating5:"5 - खूप उपयुक्त",rating4:"4 - उपयुक्त",rating3:"3 - ठीक आहे",rating2:"2 - फारशी उपयुक्त नाही",rating1:"1 - उपयुक्त नाही",suggestionLabel:"सूचना (पर्यायी)",suggestionPlaceholder:"तुमच्या सूचना लिहा...",submitFeedback:"या डिव्हाइसवर अभिप्राय जतन करा",feedbackLocalNote:"या डेमोमध्ये अभिप्राय फक्त याच ब्राउझरमध्ये जतन होतो. तो प्रकल्पाच्या मालकाला पाठवला जात नाही.",feedbackSaved:"धन्यवाद! अभिप्राय फक्त या डिव्हाइसवर जतन झाला आहे.",feedbackFailed:"या ब्राउझरमध्ये अभिप्राय जतन होऊ शकला नाही. कोणताही डेटा पाठवला नाही.",
     disclaimerTitle:"शैक्षणिक प्रकल्पाची सूचना",disclaimerText:"Digital Saathi हा स्वतंत्र शैक्षणिक प्रकल्प आहे; सरकारी वेबसाइट नाही. सेवा, आवश्यकता आणि शुल्क बदलू शकतात. माहिती संबंधित अधिकृत पोर्टलवर तपासा. या डेमो वेबसाइटवर संवेदनशील वैयक्तिक माहिती टाकू नका.",footerFeedback:"अभिप्राय द्या",closeGuide:"मार्गदर्शक बंद करा",guideIntro:"या सोप्या टप्प्यांचे अनुसरण करा. सध्याच्या सूचना अधिकृत पोर्टलवर तपासा.",guideNote:"महत्त्वाचे: तुमचा OTP, PIN किंवा पासवर्ड कोणालाही सांगू नका. अधिकृत प्रक्रिया बदलू शकते.",searchFound:"सेवा सापडल्या",
-    listen:"🔊 ऐका",play:"▶ सुरू करा",pause:"⏸ थांबवा",resume:"▶ पुन्हा सुरू करा",stop:"⏹ बंद करा",speechUnsupported:"या ब्राउझरमध्ये मजकूर वाचून दाखवण्याची सुविधा उपलब्ध नाही. Chrome, Edge किंवा Safari ची नवीन आवृत्ती वापरा.",voiceFallback:"या डिव्हाइसवर {lang} साठी योग्य आवाज उपलब्ध नाही. जवळचा उपलब्ध आवाज वापरला जात आहे; उच्चार वेगळा असू शकतो.",speechReady:"एखादा भाग ऐकण्यासाठी 'ऐका' दाबा किंवा संपूर्ण पानासाठी सुरू करा दाबा.",nothingToRead:"या भागात वाचून दाखवण्यासाठी दिसणारा मजकूर नाही.",ttsToolbar:"मजकूर ऐकण्याची नियंत्रणे",speechStopped:"आवाज बंद केला आहे.",speechPaused:"आवाज थांबवला आहे.",speechResumed:"आवाज पुन्हा सुरू केला आहे.",playPage:"▶ पान ऐका",sectionListen:"हा भाग ऐका",cardListen:"ही सेवा ऐका",guideListen:"हे मार्गदर्शन ऐका",quizListen:"ही प्रश्नमंजुषा ऐका",speechError:"आवाज सुरू होऊ शकला नाही. डिव्हाइसच्या आवाज सेटिंग्ज तपासा."
+    lessonListen:"🔊 धडा ऐका",closeLesson:"बंद करा ✕",listen:"🔊 ऐका",play:"▶ सुरू करा",pause:"⏸ थांबवा",resume:"▶ पुन्हा सुरू करा",stop:"⏹ बंद करा",speechUnsupported:"या ब्राउझरमध्ये मजकूर वाचून दाखवण्याची सुविधा उपलब्ध नाही. Chrome, Edge किंवा Safari ची नवीन आवृत्ती वापरा.",voiceFallback:"या डिव्हाइसवर {lang} साठी योग्य आवाज उपलब्ध नाही. जवळचा उपलब्ध आवाज वापरला जात आहे; उच्चार वेगळा असू शकतो.",speechReady:"एखादा भाग ऐकण्यासाठी 'ऐका' दाबा किंवा संपूर्ण पानासाठी सुरू करा दाबा.",nothingToRead:"या भागात वाचून दाखवण्यासाठी दिसणारा मजकूर नाही.",ttsToolbar:"मजकूर ऐकण्याची नियंत्रणे",speechStopped:"आवाज बंद केला आहे.",speechPaused:"आवाज थांबवला आहे.",speechResumed:"आवाज पुन्हा सुरू केला आहे.",playPage:"▶ पान ऐका",sectionListen:"हा भाग ऐका",cardListen:"ही सेवा ऐका",guideListen:"हे मार्गदर्शन ऐका",quizListen:"ही प्रश्नमंजुषा ऐका",speechError:"आवाज सुरू होऊ शकला नाही. डिव्हाइसच्या आवाज सेटिंग्ज तपासा."
 
   }
 };
@@ -144,7 +144,7 @@ function format(key, values) {
   return Object.keys(values).reduce((text, name) => text.replace("{" + name + "}", values[name]), t(key));
 }
 function setLanguage(lang) {
-  if (window.speechSynthesis) window.speechSynthesis.cancel();
+  stopSpeech(false);
   currentLang = translations[lang] ? lang : "en";
   $("#language").value = currentLang;
   document.documentElement.lang = currentLang;
@@ -173,7 +173,7 @@ function setLanguage(lang) {
     const key = $("#guideDialog").dataset.guideKey;
     if (key) renderGuide(key);
   }
-  updateTtsLabels();
+  updateLessonSpeakerLabels();
 }
 $("#language").addEventListener("change", event => setLanguage(event.target.value));
 
@@ -221,7 +221,7 @@ function renderGuide(key) {
   link.className = "btn btn-primary";
   link.textContent = t("officialPortal");
   content.append(link);
-  createTtsButton(content, "guideListen", () => getReadableText(content));
+
 }
 $("[data-guide]").forEach(button => button.addEventListener("click", () => {
   renderGuide(button.dataset.guide);
@@ -322,146 +322,156 @@ $("#feedbackForm").addEventListener("submit", event => {
   }
 });
 
-// Accessible browser-based text-to-speech. Voice quality and availability depend on the device/browser.
-let ttsCurrentText = "";
+// Single multilingual lesson speaker. Only the open service guide can start speech.
 let ttsCurrentUtterance = null;
-let ttsCurrentChunk = 0;
 let ttsChunks = [];
-let ttsUsingFallback = false;
+let ttsCurrentChunk = 0;
+let ttsSession = 0;
 const ttsLangCodes = { en: "en-IN", hi: "hi-IN", mr: "mr-IN" };
+
 function ttsSupported() {
   return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
 }
-function updateTtsLabels() {
-  const toolbar = $("#ttsToolbar");
-  if (!toolbar) return;
-  $("#ttsPlay").textContent = t("play");
-  $("#ttsPause").textContent = t("pause");
-  $("#ttsResume").textContent = t("resume");
-  $("#ttsStop").textContent = t("stop");
-  $("#ttsStatus").textContent = ttsSupported() ? t("speechReady") : t("speechUnsupported");
-  $("[data-tts-button]").forEach(button => {
-    button.textContent = t("listen");
-    button.setAttribute("aria-label", button.dataset.ttsLabel ? t(button.dataset.ttsLabel) : t("sectionListen"));
-    button.title = button.getAttribute("aria-label");
-  });
-}
-function createTtsButton(container, labelKey, textProvider) {
-  if (!container || container.querySelector(":scope > .tts-button")) return;
-  const button = document.createElement("button");
-  button.type = "button";
-  button.className = "tts-button";
-  button.dataset.ttsButton = "true";
-  button.dataset.ttsLabel = labelKey;
-  button.textContent = t("listen");
-  button.setAttribute("aria-label", t(labelKey));
-  button.addEventListener("click", () => speakText(textProvider(), true));
-  container.append(button);
-}
+
 function getReadableText(element) {
   if (!element) return "";
   const clone = element.cloneNode(true);
-  clone.querySelectorAll(".tts-button, .tts-toolbar, button, input, textarea, select, script, style, .hidden, [hidden], [aria-hidden='true']").forEach(node => node.remove());
-  return (clone.innerText || clone.textContent || "").replace(/\s+/g, " ").trim();
+  clone.querySelectorAll("button, input, textarea, select, script, style, .hidden, [hidden], [aria-hidden='true']").forEach(node => node.remove());
+  return (clone.innerText || clone.textContent || "").replace(/\\s+/g, " ").trim();
 }
+
 function selectVoice(langCode) {
   const voices = window.speechSynthesis.getVoices();
   const exact = voices.find(voice => voice.lang.toLowerCase() === langCode.toLowerCase());
-  if (exact) return {voice: exact, fallback: false};
+  if (exact) return { voice: exact, fallback: false };
   const base = langCode.split("-")[0].toLowerCase();
   const sameLanguage = voices.find(voice => voice.lang.toLowerCase().startsWith(base));
-  if (sameLanguage) return {voice: sameLanguage, fallback: false};
-  const indianEnglish = voices.find(voice => voice.lang.toLowerCase() === "en-in") ||
-    voices.find(voice => voice.lang.toLowerCase().startsWith("en"));
-  return {voice: indianEnglish || voices[0] || null, fallback: true};
+  if (sameLanguage) return { voice: sameLanguage, fallback: false };
+  const fallback = voices.find(voice => voice.lang.toLowerCase() === "en-in") ||
+    voices.find(voice => voice.lang.toLowerCase().startsWith("en")) || voices[0] || null;
+  return { voice: fallback, fallback: true };
 }
-function speakText(text, announceFallback = false) {
-  if (!ttsSupported()) {
-    $("#ttsStatus").textContent = t("speechUnsupported");
-    return;
+
+function updateLessonSpeakerLabels() {
+  const listen = $("#lessonListen");
+  const close = $("#closeDialog");
+  const pause = $("#lessonPause");
+  const resume = $("#lessonResume");
+  const stop = $("#lessonStop");
+  if (listen) listen.textContent = t("lessonListen");
+  if (close) {
+    close.textContent = t("closeLesson");
+    close.setAttribute("aria-label", t("closeGuide"));
   }
-  const cleanText = (text || "").replace(/\s+/g, " ").trim();
-  if (!cleanText) {
-    $("#ttsStatus").textContent = t("nothingToRead");
-    return;
+  if (pause) pause.textContent = t("pause");
+  if (resume) resume.textContent = t("resume");
+  if (stop) stop.textContent = t("stop");
+  const status = $("#lessonSpeechStatus");
+  if (status && !window.speechSynthesis?.speaking && !window.speechSynthesis?.paused) {
+    status.textContent = ttsSupported() ? t("speechReady") : t("speechUnsupported");
   }
-  window.speechSynthesis.cancel();
-  ttsCurrentText = cleanText;
-  ttsChunks = cleanText.match(/[\s\S]{1,220}(?:\s+|$)/g) || [cleanText];
+}
+
+function stopSpeech(showMessage = true) {
+  // Invalidate any queued chunk callbacks before cancelling the browser speech queue.
+  ttsSession++;
+  if (ttsSupported()) window.speechSynthesis.cancel();
+  ttsCurrentUtterance = null;
+  ttsChunks = [];
   ttsCurrentChunk = 0;
-  const voiceChoice = selectVoice(ttsLangCodes[currentLang] || "en-IN");
-  ttsUsingFallback = voiceChoice.fallback;
-  if (announceFallback && ttsUsingFallback) {
-    const languageNames = {en:"English (India)",hi:"Hindi",mr:"Marathi"};
-    $("#ttsStatus").textContent = format("voiceFallback", {lang: languageNames[currentLang]});
-  } else {
-    $("#ttsStatus").textContent = t("speechReady");
-  }
-  speakNextChunk(voiceChoice.voice);
+  const status = $("#lessonSpeechStatus");
+  if (status && showMessage) status.textContent = t("speechStopped");
 }
-function speakNextChunk(voice) {
+
+function speakNextChunk(session, voice) {
+  if (session !== ttsSession) return;
   if (ttsCurrentChunk >= ttsChunks.length) {
     ttsCurrentUtterance = null;
-    $("#ttsStatus").textContent = t("speechReady");
+    const status = $("#lessonSpeechStatus");
+    if (status) status.textContent = t("speechReady");
     return;
   }
   const utterance = new SpeechSynthesisUtterance(ttsChunks[ttsCurrentChunk]);
   utterance.lang = ttsLangCodes[currentLang] || "en-IN";
   if (voice) utterance.voice = voice;
   utterance.rate = 0.9;
+  ttsCurrentUtterance = utterance;
   utterance.onend = () => {
-    if (ttsCurrentUtterance !== utterance) return;
+    if (session !== ttsSession || ttsCurrentUtterance !== utterance) return;
     ttsCurrentChunk++;
-    speakNextChunk(voice);
+    speakNextChunk(session, voice);
   };
   utterance.onerror = event => {
-    if (event.error !== "canceled" && event.error !== "interrupted") {
-      $("#ttsStatus").textContent = t("speechError");
-    }
+    if (session !== ttsSession || event.error === "canceled" || event.error === "interrupted") return;
+    const status = $("#lessonSpeechStatus");
+    if (status) status.textContent = t("speechError");
   };
-  ttsCurrentUtterance = utterance;
   window.speechSynthesis.speak(utterance);
 }
-function stopSpeech(showMessage = true) {
-  if (ttsSupported()) window.speechSynthesis.cancel();
-  ttsCurrentUtterance = null;
-  ttsChunks = [];
-  ttsCurrentChunk = 0;
-  if (showMessage && $("#ttsStatus")) $("#ttsStatus").textContent = t("speechStopped");
-}
-function initTts() {
-  const toolbar = $("#ttsToolbar");
-  if (!toolbar) return;
+
+function speakLesson() {
+  const status = $("#lessonSpeechStatus");
   if (!ttsSupported()) {
-    $("#ttsStatus").textContent = t("speechUnsupported");
-    ["ttsPlay","ttsPause","ttsResume","ttsStop"].forEach(id => { $("#"+id).disabled = true; });
-  } else {
-    $("#ttsPlay").addEventListener("click", () => speakText(getReadableText(document.querySelector("main")), true));
-    $("#ttsPause").addEventListener("click", () => {
-      if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
-        window.speechSynthesis.pause();
-        $("#ttsStatus").textContent = t("speechPaused");
-      }
-    });
-    $("#ttsResume").addEventListener("click", () => {
-      if (window.speechSynthesis.paused) {
-        window.speechSynthesis.resume();
-        $("#ttsStatus").textContent = t("speechResumed");
-      }
-    });
-    $("#ttsStop").addEventListener("click", () => stopSpeech(true));
-    window.speechSynthesis.onvoiceschanged = () => {};
+    if (status) status.textContent = t("speechUnsupported");
+    return;
   }
-  $("main section").forEach(section => {
-    if (section.id === "feedback" || section.id === "quiz" || section.id === "safety" || section.id === "home" || section.id === "guides" || section.id === "services") {
-      createTtsButton(section, "sectionListen", () => getReadableText(section));
+  const guide = $("#guideContent");
+  if (!guide || !guide.textContent.trim()) {
+    if (status) status.textContent = t("nothingToRead");
+    return;
+  }
+  // Starting another lesson always cancels the previous utterance and invalidates callbacks.
+  stopSpeech(false);
+  const textToRead = getReadableText(guide);
+  if (!textToRead) {
+    if (status) status.textContent = t("nothingToRead");
+    return;
+  }
+  ttsChunks = textToRead.match(/[\\s\\S]{1,220}(?:\\s+|$)/g) || [textToRead];
+  ttsCurrentChunk = 0;
+  const session = ttsSession;
+  const langCode = ttsLangCodes[currentLang] || "en-IN";
+  const choice = selectVoice(langCode);
+  const languageNames = { en: "English (India)", hi: "Hindi", mr: "Marathi" };
+  if (status) {
+    status.textContent = choice.fallback
+      ? format("voiceFallback", { lang: languageNames[currentLang] })
+      : t("speechReady");
+  }
+  speakNextChunk(session, choice.voice);
+}
+
+function initLessonSpeaker() {
+  const listen = $("#lessonListen");
+  const pause = $("#lessonPause");
+  const resume = $("#lessonResume");
+  const stop = $("#lessonStop");
+  if (!listen || !pause || !resume || !stop) return;
+
+  if (!ttsSupported()) {
+    [listen, pause, resume, stop].forEach(button => { button.disabled = true; });
+    $("#lessonSpeechStatus").textContent = t("speechUnsupported");
+    return;
+  }
+
+  listen.addEventListener("click", speakLesson);
+  pause.addEventListener("click", () => {
+    if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+      window.speechSynthesis.pause();
+      $("#lessonSpeechStatus").textContent = t("speechPaused");
     }
   });
-  $(".service-card").forEach(card => createTtsButton(card, "cardListen", () => getReadableText(card)));
-  createTtsButton($("#guideContent"), "guideListen", () => getReadableText($("#guideContent")));
-  updateTtsLabels();
+  resume.addEventListener("click", () => {
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
+      $("#lessonSpeechStatus").textContent = t("speechResumed");
+    }
+  });
+  stop.addEventListener("click", () => stopSpeech(true));
+  $("#guideDialog").addEventListener("close", () => stopSpeech(false));
+  updateLessonSpeakerLabels();
 }
 
 setLanguage("en");
-initTts();
+initLessonSpeaker();
 renderQuestion();
