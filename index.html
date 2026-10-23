@@ -8,7 +8,7 @@
         content="Digital Sahayak helps citizens understand government portals, digital services and online safety.">
     <title>Digital Sahayak | Citizen Help Portal</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js?v=20261024-i18nfix1" defer></script>
+    <script src="script.js?v=20261024-tts1" defer></script>
 </head>
 
 <body>
@@ -34,6 +34,17 @@
             <a href="#quiz" data-i18n="navQuiz">Quiz</a>
         </nav>
     </header>
+
+    <div id="ttsToolbar" class="tts-toolbar" role="region" aria-label="Read aloud controls">
+        <strong class="tts-toolbar-title" data-i18n="ttsToolbar">Read aloud controls</strong>
+        <div class="tts-toolbar-buttons">
+            <button id="ttsPlay" class="tts-control-btn" type="button">▶ Play</button>
+            <button id="ttsPause" class="tts-control-btn" type="button">⏸ Pause</button>
+            <button id="ttsResume" class="tts-control-btn" type="button">▶ Resume</button>
+            <button id="ttsStop" class="tts-control-btn" type="button">⏹ Stop</button>
+        </div>
+        <p id="ttsStatus" class="tts-status" aria-live="polite">Choose Listen on a section, or use Play to read the main page.</p>
+    </div>
 
     <main>
         <section class="hero" id="home">
