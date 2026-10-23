@@ -155,7 +155,13 @@ function setLanguage(lang) {
     if (dictionary[key]) el.setAttribute("aria-label", dictionary[key]);
   });
   filterServices();
-  renderQuestion();
+  // Preserve the current quiz state when the language changes.
+  // In particular, redraw the result screen instead of returning to question 1.
+  if (quizFinished) {
+    showResult();
+  } else {
+    renderQuestion();
+  }
   if ($("#guideDialog").open) {
     const key = $("#guideDialog").dataset.guideKey;
     if (key) renderGuide(key);
