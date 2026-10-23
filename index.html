@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Digital Sahayak helps citizens understand government portals, digital services and online safety.">
+    <title>Digital Sahayak | Citizen Help Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="topbar">
+        <a href="#home" class="brand">
+            <span class="brand-icon">DS</span>
+            <span>Digital Sahayak<small>Citizen Help Portal</small></span>
+        </a>
+        <div class="header-tools">
+            <label for="language" class="sr-only">Choose language</label>
+            <select id="language" aria-label="Choose language">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+                <option value="mr">मराठी</option>
+            </select>
+            <button id="menuBtn" class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+        <nav id="nav">
+            <a href="#home" data-i18n="navHome">Home</a>
+            <a href="#services" data-i18n="navServices">Services</a>
+            <a href="#guides" data-i18n="navGuides">Guides</a>
+            <a href="#safety" data-i18n="navSafety">Cyber Safety</a>
+            <a href="#quiz" data-i18n="navQuiz">Quiz</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow" data-i18n="eyebrow">YOUR DIGITAL GUIDE</span>
+                <h1 data-i18n="heroTitle">Government services, made simple.</h1>
+                <p data-i18n="heroText">Learn how to use digital government portals
+                    with easy guides, document checklists and online safety tips.</p>
+                <a href="#services" class="btn btn-primary" data-i18n="explore">
+                    Explore Services →
+                </a>
+                <div class="hero-note">✓ Free learning resources
+                    &nbsp; ✓ Simple instructions</div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <div class="art-circle">🇮🇳</div>
+                <div class="art-card">
+                    <span>✓</span>
+                    <strong>Digital Services</strong>
+                    <small>Learn • Prepare • Access</small>
+                </div>
+                <div class="art-mini">📱 Easy to use</div>
+            </div>
+        </section>
+
+        <section class="section search-section">
+            <div>
+                <span class="eyebrow" data-i18n="quickHelp">QUICK HELP</span>
+                <h2 data-i18n="findTitle">What do you need help with?</h2>
+            </div>
+            <label class="searchbox">
+                <span aria-hidden="true">⌕</span>
+                <input id="searchInput" type="search" data-i18n-placeholder="searchPlaceholder"
+                    placeholder="Search services...">
+            </label>
+            <p id="searchStatus" class="muted" aria-live="polite"></p>
+        </section>
+
+        <section class="section" id="services">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow" data-i18n="servicesEyebrow">EXPLORE</span>
+                    <h2 data-i18n="servicesTitle">Popular Government Services</h2>
+                    <p data-i18n="servicesText">Choose a service to learn more.</p>
+                </div>
+            </div>
+
+            <div class="service-grid" id="serviceGrid">
+                <article class="service-card" data-search="digilocker documents certificates digital documents">
+                    <div class="service-icon teal">▣</div>
+                    <span class="tag">DOCUMENTS</span>
+                    <h3>DigiLocker</h3>
+                    <p data-i18n="digilockerDesc">Learn about accessing digital documents and certificates.</p>
+                    <a href="https://www.digilocker.gov.in/" target="_blank" rel="noopener noreferrer"
+                        class="service-link">Official Portal ↗</a>
+                    <button class="guide-btn" data-guide="digilocker" data-i18n="guideBtn">View Guide</button>
+                </article>
+
+                <article class="service-card" data-search="umang government services departments mobile">
+                    <div class="service-icon blue">⌘</div>
+                    <span class="tag">SERVICES</span>
+                    <h3>UMANG</h3>
+                    <p data-i18n="umangDesc">Discover government services available through UMANG.</p>
+                    <a href="https://web.umang.gov.in/" target="_blank" rel="noopener noreferrer"
+                        class="service-link">Official Portal ↗</a>
+                    <button class="guide-btn" data-guide="umang" data-i18n="guideBtn">View Guide</button>
+                </article>
+
+                <article class="service-card" data-search="myscheme welfare benefits eligibility schemes">
+                    <div class="service-icon orange">☆</div>
+                    <span class="tag">SCHEMES</span>
+                    <h3>myScheme</h3>
+                    <p data-i18n="schemeDesc">Explore government schemes and eligibility information.</p>
+                    <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener noreferrer"
+                        class="service-link">Official Portal ↗</a>
+                    <button class="guide-btn" data-guide="myscheme" data-i18n="guideBtn">View Guide</button>
+                </article>
+
+                <article class="service-card" data-search="aadhaar uidai identity update official">
+                    <div class="service-icon purple">◎</div>
+                    <span class="tag">IDENTITY</span>
+                    <h3>Aadhaar / UIDAI</h3>
+                    <p data-i18n="aadhaarDesc">Find official Aadhaar services and information.</p>
+                    <a href="https://uidai.gov.in/" target="_blank" rel="noopener noreferrer"
+                        class="service-link">Official Portal ↗</a>
+                    <button class="guide-btn" data-guide="aadhaar" data-i18n="guideBtn">View Guide</button>
+                </article>
+
+                <article class="service-card" data-search="voter election registration electoral services">
+                    <div class="service-icon pink">✓</div>
+                    <span class="tag">CITIZENSHIP</span>
+                    <h3>Voter Services</h3>
+                    <p data-i18n="voterDesc">Learn about voter registration and electoral services.</p>
+                    <a href="https://voters.eci.gov.in/" target="_blank" rel="noopener noreferrer"
+                        class="service-link">Official Portal ↗</a>
+                    <button class="guide-btn" data-guide="voter" data-i18n="guideBtn">View Guide</button>
+                </article>
+
+                <article class="service-card" data-search="cyber safety online fraud otp phishing scam">
+                    <div class="service-icon red">⌑</div>
+                    <span class="tag">SAFETY</span>
+                    <h3 data-i18n="safetyCard">Cyber Safety</h3>
+                    <p data-i18n="safetyDesc">Learn how to identify online scams and protect your accounts.</p>
+                    <a href="#safety" class="service-link" data-i18n="learnSafety">Learn Safety ↓</a>
+                    <button class="guide-btn" data-guide="safety" data-i18n="guideBtn">View Guide</button>
+                </article>
+            </div>
+            <p id="noResults" class="empty hidden" data-i18n="noResults">
+                No matching services found. Try another search.
+            </p>
+        </section>
+
+        <section class="section guides-section" id="guides">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow" data-i18n="guidesEyebrow">LEARN STEP BY STEP</span>
+                    <h2 data-i18n="guidesTitle">Before using a portal</h2>
+                </div>
+            </div>
+            <div class="guide-layout">
+                <div class="guide-copy">
+                    <div class="step"><span>01</span>
+                        <div>
+                            <h3 data-i18n="step1Title">Choose the correct service</h3>
+                            <p data-i18n="step1Text">Use the official website for your specific requirement.</p>
+                        </div>
+                    </div>
+                    <div class="step"><span>02</span>
+                        <div>
+                            <h3 data-i18n="step2Title">Check the requirements</h3>
+                            <p data-i18n="step2Text">Read the official instructions and prepare required documents.</p>
+                        </div>
+                    </div>
+                    <div class="step"><span>03</span>
+                        <div>
+                            <h3 data-i18n="step3Title">Follow official instructions</h3>
+                            <p data-i18n="step3Text">Review information carefully before submitting any application.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="checklist">
+                    <h3 data-i18n="checkTitle">My preparation checklist</h3>
+                    <p data-i18n="checkText">Tick each item as you prepare.</p>
+                    <label><input type="checkbox"> <span data-i18n="check1">I identified the correct
+                            service</span></label>
+                    <label><input type="checkbox"> <span data-i18n="check2">I checked official
+                            requirements</span></label>
+                    <label><input type="checkbox"> <span data-i18n="check3">I opened the official website</span></label>
+                    <label><input type="checkbox"> <span data-i18n="check4">I will keep OTPs and passwords
+                            private</span></label>
+                    <p class="muted" data-i18n="checkNote">This checklist is for learning and preparation only.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section safety-section" id="safety">
+            <span class="eyebrow" data-i18n="safetyEyebrow">STAY PROTECTED</span>
+            <h2 data-i18n="safetyTitle">Stay safe while using the internet</h2>
+            <div class="safety-grid">
+                <article><span>🔐</span>
+                    <h3 data-i18n="otpTitle">Never share OTPs</h3>
+                    <p data-i18n="otpText">Do not share OTPs, PINs or passwords with callers or strangers.</p>
+                </article>
+                <article><span>🌐</span>
+                    <h3 data-i18n="urlTitle">Verify website addresses</h3>
+                    <p data-i18n="urlText">Use trusted official links. A .gov.in address alone is not enough; check the
+                        exact domain.</p>
+                </article>
+                <article><span>⚠️</span>
+                    <h3 data-i18n="scamTitle">Avoid suspicious links</h3>
+                    <p data-i18n="scamText">Do not click unexpected messages promising prizes or urgent benefits.</p>
+                </article>
+            </div>
+            <p class="emergency-note" data-i18n="safetyNote">
+                Suspect a cyber financial fraud? In India, call 1930 promptly and report it at cybercrime.gov.in.
+            </p>
+            <a class="btn btn-light" href="https://www.cybercrime.gov.in/" target="_blank" rel="noopener noreferrer"
+                data-i18n="reportBtn">Official Cyber Crime Portal ↗</a>
+        </section>
+
+        <section class="section quiz-section" id="quiz">
+            <span class="eyebrow" data-i18n="quizEyebrow">TEST YOUR KNOWLEDGE</span>
+            <h2 data-i18n="quizTitle">Digital Safety Quiz</h2>
+            <div class="quiz-box">
+                <p id="questionCount" class="tag">Question 1 of 3</p>
+                <h3 id="question">Someone asks you to share an OTP over the phone. What should you do?</h3>
+                <div id="answers" class="answers"></div>
+                <p id="quizFeedback" aria-live="polite"></p>
+                <div class="quiz-actions">
+                    <span id="quizScore" class="muted"></span>
+                    <button id="nextQuestion" class="btn btn-primary" disabled>Next Question →</button>
+                </div>
+                <button id="restartQuiz" class="text-btn hidden">Restart quiz</button>
+            </div>
+        </section>
+
+        <section class="section feedback-section" id="feedback">
+            <div>
+                <span class="eyebrow" data-i18n="feedbackEyebrow">YOUR VOICE MATTERS</span>
+                <h2 data-i18n="feedbackTitle">Help us improve</h2>
+                <p data-i18n="feedbackText">Share your experience using this educational website.</p>
+            </div>
+            <form id="feedbackForm" class="feedback-form">
+                <label for="rating" data-i18n="ratingLabel">Was this website helpful?</label>
+                <select id="rating" required>
+                    <option value="" data-i18n="selectRating">Choose a rating</option>
+                    <option value="5">5 - Very helpful</option>
+                    <option value="4">4 - Helpful</option>
+                    <option value="3">3 - Okay</option>
+                    <option value="2">2 - Not very helpful</option>
+                    <option value="1">1 - Not helpful</option>
+                </select>
+                <label for="suggestion" data-i18n="suggestionLabel">Suggestions (optional)</label>
+                <textarea id="suggestion" rows="3" maxlength="500" placeholder="Share your suggestions..."></textarea>
+                <button class="btn btn-primary" type="submit" data-i18n="submitFeedback">Save feedback on this
+                    device</button>
+                <p id="feedbackStatus" aria-live="polite" class="muted"></p>
+            </form>
+        </section>
+
+        <section class="disclaimer">
+            <strong data-i18n="disclaimerTitle">Educational project notice</strong>
+            <p data-i18n="disclaimerText">Digital Sahayak is an independent educational project, not a government
+                website. Services, requirements and fees can change. Always verify details on the relevant official
+                portal. Never enter sensitive personal information on this demo website.</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="brand footer-brand"><span class="brand-icon">DS</span>
+            <span>Digital Sahayak<small>Digital awareness for everyone</small></span></a>
+        <p>College CEP Project · <span id="year"></span></p>
+        <a href="#feedback" data-i18n="footerFeedback">Give Feedback</a>
+    </footer>
+
+    <dialog id="guideDialog" class="guide-dialog">
+        <button id="closeDialog" class="close-btn" aria-label="Close guide">✕</button>
+        <div id="guideContent"></div>
+    </dialog>
+</body>
+
+</html>
