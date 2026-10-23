@@ -5,7 +5,7 @@ $("#year").textContent = new Date().getFullYear();
 
 const translations = {
   en: {
-    navHome:"Home",navServices:"Services",navGuides:"Guides",navSafety:"Cyber Safety",navQuiz:"Quiz",
+    navHome:"Home",navServices:"Services",navGuides:"Guides",navSafety:"Cyber Safety",navQuiz:"Quiz",brandSubtitle:"Citizen Help Portal",footerTagline:"Digital awareness for everyone",footerProject:"College CEP Project",
     eyebrow:"YOUR DIGITAL GUIDE",heroTitle:"Government services, made simple.",heroText:"Learn how to use digital government portals with easy guides, document checklists and online safety tips.",
     explore:"Explore Services →",heroNote:"✓ Free learning resources · ✓ Simple instructions",artServices:"Digital Services",artSteps:"Learn • Prepare • Access",artMini:"📱 Easy to use",
     quickHelp:"QUICK HELP",findTitle:"What do you need help with?",searchPlaceholder:"Search services...",servicesEyebrow:"EXPLORE",servicesTitle:"Popular Government Services",servicesText:"Choose a service to learn more.",
@@ -21,7 +21,7 @@ const translations = {
     searchFound:"service(s) found"
   },
   hi: {
-    navHome:"होम",navServices:"सेवाएँ",navGuides:"मार्गदर्शिका",navSafety:"साइबर सुरक्षा",navQuiz:"प्रश्नोत्तरी",
+    navHome:"होम",navServices:"सेवाएँ",navGuides:"मार्गदर्शिका",navSafety:"साइबर सुरक्षा",navQuiz:"प्रश्नोत्तरी",brandSubtitle:"नागरिक सहायता पोर्टल",footerTagline:"सभी के लिए डिजिटल जागरूकता",footerProject:"कॉलेज CEP परियोजना",
     eyebrow:"आपका डिजिटल मार्गदर्शक",heroTitle:"सरकारी सेवाएँ, अब आसान।",heroText:"सरल मार्गदर्शिकाओं, दस्तावेज़ सूची और ऑनलाइन सुरक्षा सुझावों से सरकारी पोर्टल इस्तेमाल करना सीखें।",
     explore:"सेवाएँ देखें →",heroNote:"✓ मुफ़्त सीखने की सामग्री · ✓ सरल निर्देश",artServices:"डिजिटल सेवाएँ",artSteps:"सीखें • तैयारी करें • उपयोग करें",artMini:"📱 इस्तेमाल में आसान",
     quickHelp:"त्वरित सहायता",findTitle:"आपको किस चीज़ में मदद चाहिए?",searchPlaceholder:"सेवाएँ खोजें...",servicesEyebrow:"सेवाएँ देखें",servicesTitle:"लोकप्रिय सरकारी सेवाएँ",servicesText:"जानकारी के लिए सेवा चुनें।",
@@ -36,7 +36,7 @@ const translations = {
     disclaimerTitle:"शैक्षणिक परियोजना सूचना",disclaimerText:"Digital Sahayak एक स्वतंत्र शैक्षणिक परियोजना है, सरकारी वेबसाइट नहीं। सेवाएँ, आवश्यकताएँ और शुल्क बदल सकते हैं। जानकारी संबंधित आधिकारिक पोर्टल पर जाँचें। इस डेमो वेबसाइट पर संवेदनशील व्यक्तिगत जानकारी न डालें।",footerFeedback:"फ़ीडबैक दें",closeGuide:"मार्गदर्शिका बंद करें",guideIntro:"इन सरल चरणों का पालन करें। वर्तमान निर्देश आधिकारिक पोर्टल पर जाँचें।",guideNote:"महत्वपूर्ण: अपना OTP, PIN या पासवर्ड किसी से साझा न करें। आधिकारिक प्रक्रिया बदल सकती है।",searchFound:"सेवाएँ मिलीं"
   },
   mr: {
-    navHome:"मुख्यपृष्ठ",navServices:"सेवा",navGuides:"मार्गदर्शक",navSafety:"सायबर सुरक्षा",navQuiz:"प्रश्नमंजुषा",
+    navHome:"मुख्यपृष्ठ",navServices:"सेवा",navGuides:"मार्गदर्शक",navSafety:"सायबर सुरक्षा",navQuiz:"प्रश्नमंजुषा",brandSubtitle:"नागरिक सहाय्य पोर्टल",footerTagline:"प्रत्येकासाठी डिजिटल जागरूकता",footerProject:"महाविद्यालयीन CEP प्रकल्प",
     eyebrow:"तुमचा डिजिटल मार्गदर्शक",heroTitle:"सरकारी सेवा, आता सोप्या पद्धतीने.",heroText:"सोपे मार्गदर्शक, कागदपत्रांची यादी आणि ऑनलाइन सुरक्षिततेच्या टिप्स वापरून सरकारी पोर्टल वापरायला शिका.",
     explore:"सेवा पाहा →",heroNote:"✓ मोफत शिकण्याचे साहित्य · ✓ सोप्या सूचना",artServices:"डिजिटल सेवा",artSteps:"शिका • तयारी करा • वापरा",artMini:"📱 वापरण्यास सोपे",
     quickHelp:"त्वरित मदत",findTitle:"तुम्हाला कोणत्या मदतीची गरज आहे?",searchPlaceholder:"सेवा शोधा...",servicesEyebrow:"सेवा पाहा",servicesTitle:"लोकप्रिय सरकारी सेवा",servicesText:"अधिक माहितीसाठी सेवा निवडा.",
