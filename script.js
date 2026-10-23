@@ -221,8 +221,9 @@ function renderGuide(key) {
   link.className = "btn btn-primary";
   link.textContent = t("officialPortal");
   content.append(link);
+  createTtsButton(content, "guideListen", () => getReadableText(content));
 }
-$$("[data-guide]").forEach(button => button.addEventListener("click", () => {
+$("[data-guide]").forEach(button => button.addEventListener("click", () => {
   renderGuide(button.dataset.guide);
   const dialog = $("#guideDialog");
   if (typeof dialog.showModal === "function") dialog.showModal();
