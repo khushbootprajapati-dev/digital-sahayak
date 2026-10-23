@@ -19,7 +19,7 @@ const translations = {
     feedbackEyebrow:"YOUR VOICE MATTERS",feedbackTitle:"Help us improve",feedbackText:"Share your experience using this educational website.",ratingLabel:"Was this website helpful?",selectRating:"Choose a rating",rating5:"5 - Very helpful",rating4:"4 - Helpful",rating3:"3 - Okay",rating2:"2 - Not very helpful",rating1:"1 - Not helpful",suggestionLabel:"Suggestions (optional)",suggestionPlaceholder:"Share your suggestions...",submitFeedback:"Save feedback on this device",feedbackLocalNote:"This demo saves feedback only in this browser. It does not send it to the project owner.",feedbackSaved:"Thank you! Feedback is saved on this device only.",feedbackFailed:"Feedback could not be saved in this browser. No data was sent.",
     disclaimerTitle:"Educational project notice",disclaimerText:"Digital Saathi is an independent educational project, not a government website. Services, requirements and fees can change. Always verify details on the relevant official portal. Never enter sensitive personal information on this demo website.",footerFeedback:"Give Feedback",closeGuide:"Close guide",guideIntro:"Follow these beginner-friendly steps. Confirm current instructions on the official portal.",guideNote:"Important: Never share your OTP, PIN or password with anyone. Official procedures may change.",
     searchFound:"service(s) found",
-    lessonListen:"🔊 Listen to lesson",closeLesson:"Close ✕",listen:"🔊 Listen",play:"▶ Play",pause:"⏸ Pause",resume:"▶ Resume",stop:"⏹ Stop",speechUnsupported:"Text-to-speech is not supported in this browser. Try an updated Chrome, Edge, or Safari browser.",voiceFallback:"The exact {lang} voice is unavailable on this device. Using the closest available voice; pronunciation may vary.",speechReady:"Choose Listen on a section, or use Play to read the main page.",nothingToRead:"There is no visible text to read in this section.",ttsToolbar:"Read aloud controls",speechStopped:"Speech stopped.",speechPaused:"Speech paused.",speechResumed:"Speech resumed.",playPage:"▶ Read page",sectionListen:"Listen to this section",cardListen:"Listen to this service",guideListen:"Listen to this guide",quizListen:"Listen to this quiz",speechError:"Speech could not start. Check your device's speech/voice settings."
+    lessonListen:"🔊 Listen to lesson",closeLesson:"Close ✕",listen:"🔊 Listen",play:"▶ Play",pause:"⏸ Pause",resume:"▶ Resume",stop:"⏹ Stop",speechUnsupported:"Text-to-speech is not supported in this browser. Try an updated Chrome, Edge, or Safari browser.",voiceFallback:"The exact {lang} voice is unavailable on this device. Using the closest available voice; pronunciation may vary.",speechReady:"Ready to read the open lesson.",nothingToRead:"There is no visible text to read in this section.",ttsToolbar:"Read aloud controls",speechStopped:"Speech stopped.",speechPaused:"Speech paused.",speechResumed:"Speech resumed.",playPage:"▶ Read page",sectionListen:"Listen to this section",cardListen:"Listen to this service",guideListen:"Listen to this guide",quizListen:"Listen to this quiz",speechError:"Speech could not start. Check your device's speech/voice settings."
 
   },
   hi: {
@@ -198,6 +198,7 @@ function renderGuide(key) {
   const content = $("#guideContent");
   content.replaceChildren();
   const title = document.createElement("h2");
+  title.id = "guideDialogTitle";
   title.textContent = guide.title[currentLang];
   content.append(title);
   const intro = document.createElement("p");
@@ -337,7 +338,7 @@ function getReadableText(element) {
   if (!element) return "";
   const clone = element.cloneNode(true);
   clone.querySelectorAll("button, input, textarea, select, script, style, .hidden, [hidden], [aria-hidden='true']").forEach(node => node.remove());
-  return (clone.innerText || clone.textContent || "").replace(/\\s+/g, " ").trim();
+  return (clone.innerText || clone.textContent || "").replace(/\s+/g, " ").trim();
 }
 
 function selectVoice(langCode) {
@@ -427,7 +428,7 @@ function speakLesson() {
     if (status) status.textContent = t("nothingToRead");
     return;
   }
-  ttsChunks = textToRead.match(/[\\s\\S]{1,220}(?:\\s+|$)/g) || [textToRead];
+  ttsChunks = textToRead.match(/[\s\S]{1,220}(?:\s+|$)/g) || [textToRead];
   ttsCurrentChunk = 0;
   const session = ttsSession;
   const langCode = ttsLangCodes[currentLang] || "en-IN";
