@@ -45,17 +45,16 @@
                 <a href="#services" class="btn btn-primary" data-i18n="explore">
                     Explore Services →
                 </a>
-                <div class="hero-note">✓ Free learning resources
-                    &nbsp; ✓ Simple instructions</div>
+                <div class="hero-note"><span data-i18n="heroNote">✓ Free learning resources · ✓ Simple instructions</span></div>
             </div>
             <div class="hero-art" aria-hidden="true">
                 <div class="art-circle">🇮🇳</div>
                 <div class="art-card">
                     <span>✓</span>
-                    <strong>Digital Services</strong>
-                    <small>Learn • Prepare • Access</small>
+                    <strong data-i18n="artServices">Digital Services</strong>
+                    <small data-i18n="artSteps">Learn • Prepare • Access</small>
                 </div>
-                <div class="art-mini">📱 Easy to use</div>
+                <div class="art-mini" data-i18n="artMini">📱 Easy to use</div>
             </div>
         </section>
 
@@ -84,57 +83,57 @@
             <div class="service-grid" id="serviceGrid">
                 <article class="service-card" data-search="digilocker documents certificates digital documents">
                     <div class="service-icon teal">▣</div>
-                    <span class="tag">DOCUMENTS</span>
+                    <span class="tag" data-i18n="tagDocuments">DOCUMENTS</span>
                     <h3>DigiLocker</h3>
                     <p data-i18n="digilockerDesc">Learn about accessing digital documents and certificates.</p>
                     <a href="https://www.digilocker.gov.in/" target="_blank" rel="noopener noreferrer"
-                        class="service-link">Official Portal ↗</a>
+                        class="service-link" data-i18n="officialPortal">Official Portal ↗</a>
                     <button class="guide-btn" data-guide="digilocker" data-i18n="guideBtn">View Guide</button>
                 </article>
 
                 <article class="service-card" data-search="umang government services departments mobile">
                     <div class="service-icon blue">⌘</div>
-                    <span class="tag">SERVICES</span>
+                    <span class="tag" data-i18n="tagServices">SERVICES</span>
                     <h3>UMANG</h3>
                     <p data-i18n="umangDesc">Discover government services available through UMANG.</p>
                     <a href="https://web.umang.gov.in/" target="_blank" rel="noopener noreferrer"
-                        class="service-link">Official Portal ↗</a>
+                        class="service-link" data-i18n="officialPortal">Official Portal ↗</a>
                     <button class="guide-btn" data-guide="umang" data-i18n="guideBtn">View Guide</button>
                 </article>
 
                 <article class="service-card" data-search="myscheme welfare benefits eligibility schemes">
                     <div class="service-icon orange">☆</div>
-                    <span class="tag">SCHEMES</span>
+                    <span class="tag" data-i18n="tagSchemes">SCHEMES</span>
                     <h3>myScheme</h3>
                     <p data-i18n="schemeDesc">Explore government schemes and eligibility information.</p>
                     <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener noreferrer"
-                        class="service-link">Official Portal ↗</a>
+                        class="service-link" data-i18n="officialPortal">Official Portal ↗</a>
                     <button class="guide-btn" data-guide="myscheme" data-i18n="guideBtn">View Guide</button>
                 </article>
 
                 <article class="service-card" data-search="aadhaar uidai identity update official">
                     <div class="service-icon purple">◎</div>
-                    <span class="tag">IDENTITY</span>
+                    <span class="tag" data-i18n="tagIdentity">IDENTITY</span>
                     <h3>Aadhaar / UIDAI</h3>
                     <p data-i18n="aadhaarDesc">Find official Aadhaar services and information.</p>
                     <a href="https://uidai.gov.in/" target="_blank" rel="noopener noreferrer"
-                        class="service-link">Official Portal ↗</a>
+                        class="service-link" data-i18n="officialPortal">Official Portal ↗</a>
                     <button class="guide-btn" data-guide="aadhaar" data-i18n="guideBtn">View Guide</button>
                 </article>
 
                 <article class="service-card" data-search="voter election registration electoral services">
                     <div class="service-icon pink">✓</div>
-                    <span class="tag">CITIZENSHIP</span>
+                    <span class="tag" data-i18n="tagCitizenship">CITIZENSHIP</span>
                     <h3>Voter Services</h3>
                     <p data-i18n="voterDesc">Learn about voter registration and electoral services.</p>
                     <a href="https://voters.eci.gov.in/" target="_blank" rel="noopener noreferrer"
-                        class="service-link">Official Portal ↗</a>
+                        class="service-link" data-i18n="officialPortal">Official Portal ↗</a>
                     <button class="guide-btn" data-guide="voter" data-i18n="guideBtn">View Guide</button>
                 </article>
 
                 <article class="service-card" data-search="cyber safety online fraud otp phishing scam">
                     <div class="service-icon red">⌑</div>
-                    <span class="tag">SAFETY</span>
+                    <span class="tag" data-i18n="tagSafety">SAFETY</span>
                     <h3 data-i18n="safetyCard">Cyber Safety</h3>
                     <p data-i18n="safetyDesc">Learn how to identify online scams and protect your accounts.</p>
                     <a href="#safety" class="service-link" data-i18n="learnSafety">Learn Safety ↓</a>
@@ -218,15 +217,18 @@
             <span class="eyebrow" data-i18n="quizEyebrow">TEST YOUR KNOWLEDGE</span>
             <h2 data-i18n="quizTitle">Digital Safety Quiz</h2>
             <div class="quiz-box">
-                <p id="questionCount" class="tag">Question 1 of 3</p>
+                <p id="questionCount" class="tag" aria-live="polite">Question 1 of 10</p>
                 <h3 id="question">Someone asks you to share an OTP over the phone. What should you do?</h3>
                 <div id="answers" class="answers"></div>
                 <p id="quizFeedback" aria-live="polite"></p>
                 <div class="quiz-actions">
-                    <span id="quizScore" class="muted"></span>
-                    <button id="nextQuestion" class="btn btn-primary" disabled>Next Question →</button>
+                    <span id="quizScore" class="muted" aria-live="polite"></span>
+                    <div class="quiz-navigation">
+                        <button id="previousQuestion" class="btn btn-secondary" type="button" disabled>← Previous</button>
+                        <button id="nextQuestion" class="btn btn-primary" type="button" disabled>Next Question →</button>
+                    </div>
                 </div>
-                <button id="restartQuiz" class="text-btn hidden">Restart quiz</button>
+                <button id="restartQuiz" class="text-btn hidden" type="button">Restart Quiz</button>
             </div>
         </section>
 
@@ -240,16 +242,16 @@
                 <label for="rating" data-i18n="ratingLabel">Was this website helpful?</label>
                 <select id="rating" required>
                     <option value="" data-i18n="selectRating">Choose a rating</option>
-                    <option value="5">5 - Very helpful</option>
-                    <option value="4">4 - Helpful</option>
-                    <option value="3">3 - Okay</option>
-                    <option value="2">2 - Not very helpful</option>
-                    <option value="1">1 - Not helpful</option>
+                    <option value="5" data-i18n="rating5">5 - Very helpful</option>
+                    <option value="4" data-i18n="rating4">4 - Helpful</option>
+                    <option value="3" data-i18n="rating3">3 - Okay</option>
+                    <option value="2" data-i18n="rating2">2 - Not very helpful</option>
+                    <option value="1" data-i18n="rating1">1 - Not helpful</option>
                 </select>
                 <label for="suggestion" data-i18n="suggestionLabel">Suggestions (optional)</label>
-                <textarea id="suggestion" rows="3" maxlength="500" placeholder="Share your suggestions..."></textarea>
-                <button class="btn btn-primary" type="submit" data-i18n="submitFeedback">Save feedback on this
-                    device</button>
+                <textarea id="suggestion" rows="3" maxlength="500" data-i18n-placeholder="suggestionPlaceholder" placeholder="Share your suggestions..."></textarea>
+                <button class="btn btn-primary" type="submit" data-i18n="submitFeedback">Save feedback on this device</button>
+                <p class="form-note" data-i18n="feedbackLocalNote">This demo saves feedback only in this browser. It does not send it to the project owner.</p>
                 <p id="feedbackStatus" aria-live="polite" class="muted"></p>
             </form>
         </section>
@@ -270,7 +272,7 @@
     </footer>
 
     <dialog id="guideDialog" class="guide-dialog">
-        <button id="closeDialog" class="close-btn" aria-label="Close guide">✕</button>
+        <button id="closeDialog" class="close-btn" aria-label="Close guide" data-i18n-aria-label="closeGuide">✕</button>
         <div id="guideContent"></div>
     </dialog>
 </body>
