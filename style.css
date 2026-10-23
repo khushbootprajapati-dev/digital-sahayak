@@ -970,3 +970,36 @@ button:disabled {
         padding: 10px 8px;
     }
 }
+
+
+/* Digital Saathi bilingual brand taglines */
+.brand-name {
+    display: block;
+    white-space: normal;
+    min-width: 0;
+}
+.brand .brand-tagline {
+    display: block;
+    white-space: normal;
+    font-size: 10px;
+    line-height: 1.35;
+    font-weight: 500;
+    max-width: 340px;
+}
+.footer-brand .brand-tagline {
+    max-width: 360px;
+}
+@media (max-width: 600px) {
+    .topbar {
+        gap: 8px;
+    }
+    .brand {
+        white-space: normal;
+        flex: 1 1 200px;
+        min-width: 0;
+    }
+    .brand .brand-tagline {
+        font-size: 9px;
+        overflow-wrap: anywhere;
+    }
+}
