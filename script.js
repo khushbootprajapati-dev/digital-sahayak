@@ -224,7 +224,7 @@ function renderGuide(key) {
   content.append(link);
 
 }
-$("[data-guide]").forEach(button => button.addEventListener("click", () => {
+$$("[data-guide]").forEach(button => button.addEventListener("click", () => {
   renderGuide(button.dataset.guide);
   const dialog = $("#guideDialog");
   if (typeof dialog.showModal === "function") dialog.showModal();
